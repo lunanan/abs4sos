@@ -1,0 +1,13 @@
+# Autoriser le listing du répertoire
+Options +Indexes
+
+# Autoriser l'interprétation automatique des fichiers d'index
+DirectoryIndex index.html index.php
+
+# Autoriser l'interprétation des fichiers php
+php_flag engine on
+
+# Ne pas forcer le type de contenu à application/x-download
+# (restituer la cohérence du type mime avec l'extension de fichier)
+# (nécessaire pour interpréter les fichiers HTML)
+ForceType none
